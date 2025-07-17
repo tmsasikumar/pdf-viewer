@@ -24,7 +24,7 @@ export function App() {
 
   const [isTextExtracted, setIsTextExtracted] = React.useState(false);
   const [searchText, setSearchText] = React.useState('');
-  const documentPath = window.location.origin + '/ej2-pdfviewer-lib/floorMap.pdf';
+  const documentPath = window.location.origin + '/ej2-pdfviewer-lib/floormap.pdf';
   const resource = window.location.origin + '/ej2-pdfviewer-lib';
 
   const toolbarSettings = {
