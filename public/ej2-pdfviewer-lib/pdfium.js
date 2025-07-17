@@ -356,7 +356,7 @@ var PDFiumModule = (() => {
             wasmBinaryFile = PDFiumModule.url + '/pdfium.wasm';
         }
         else {
-            wasmBinaryFile = '/ej2-pdfviewer-lib/pdfium.wasm';
+            wasmBinaryFile = 'pdfium.wasm';
         }
         if (!isDataURI(wasmBinaryFile)) {
             wasmBinaryFile = locateFile(wasmBinaryFile)
