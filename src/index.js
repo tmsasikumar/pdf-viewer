@@ -7,7 +7,7 @@ export function App() {
   const viewerRef = React.useRef(null);
 
   const [isTextExtracted, setIsTextExtracted] = React.useState(false);
-  var documentPath = window.location.origin + "/ej2-pdfviewer-lib/floorMap.pdf";
+  var documentPath = window.location.origin + "/ej2-pdfviewer-lib/floormap.pdf";
   var resource = window.location.origin + "/ej2-pdfviewer-lib";
 
   const toolbarSettings = {
