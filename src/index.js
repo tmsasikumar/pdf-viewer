@@ -109,23 +109,6 @@ export function App() {
   return (
     <div>
       <div className="control-section">
-      <div style={{ marginBottom: '10px' }}>
-          <input
-            type="text"
-            value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
-            placeholder="Enter text to search"
-            style={{ padding: '5px', width: '200px', marginRight: '10px' }}
-          />
-          <button
-            id="search"
-            className="e-btn e-primary"
-            disabled={!isTextExtracted}
-            onClick={handleSearch}
-          >
-            Search
-          </button>
-        </div>
         <PdfViewerComponent
           ref={viewerRef}
           id="container"
@@ -147,6 +130,23 @@ export function App() {
             ]}
           />
         </PdfViewerComponent>
+              <div style={{ marginBottom: '10px' }}>
+          <input
+            type="text"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+            placeholder="Enter text to search"
+            style={{ padding: '5px', width: '200px', marginRight: '10px' }}
+          />
+          <button
+            id="search"
+            className="e-btn e-primary"
+            disabled={!isTextExtracted}
+            onClick={handleSearch}
+          >
+            Search
+          </button>
+        </div>
       </div>
     </div>
   );
